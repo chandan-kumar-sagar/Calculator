@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="144dp"
+        android:text="CALCULATOR"
+        android:textColor="#E91E1E"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="36dp"
+        android:text="7"
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_four"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="36dp"
+        android:text="/"
+        android:textColor="#2196F3"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_mul"
+        app:layout_constraintStart_toEndOf="@+id/button_nine" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="316dp"
+        android:text="4"
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="35dp"
+        android:text="5"
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_two"
+        app:layout_constraintStart_toEndOf="@+id/button_four" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="8"
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_five"
+        app:layout_constraintStart_toEndOf="@+id/button_seven" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="28dp"
+        android:text="9"
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_six"
+        app:layout_constraintStart_toEndOf="@+id/button_eight" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="324dp"
+        android:layout_marginBottom="469dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginBottom="474dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="39dp"
+        android:text="6"
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_three"
+        app:layout_constraintStart_toEndOf="@+id/button_five" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="316dp"
+        android:text="*"
+        android:textColor="#03A9F4"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_six" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="28dp"
+        android:text="1"
+        android:textColor="#009688"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_zero"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="28dp"
+        android:text="2"
+        android:textColor="#009688"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_dot"
+        app:layout_constraintStart_toEndOf="@+id/button_one" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        android:text="="
+        android:textColor="#00BCD4"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_sub"
+        app:layout_constraintStart_toEndOf="@+id/button_three" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="17dp"
+        android:text="0"
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_clear"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="17dp"
+        android:text="."
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_clear"
+        app:layout_constraintStart_toEndOf="@+id/button_zero" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginBottom="107dp"
+        android:text="+"
+        android:textColor="#00BCD4"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_dot" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="107dp"
+        android:text="-"
+        android:textColor="#00BCD4"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_add" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="38dp"
+        android:text="AC"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/button_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="28dp"
+        android:text="3"
+        android:textColor="#4CAF50"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintStart_toEndOf="@+id/button_two" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_seven"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:hint="Input"
+        app:layout_constraintBottom_toTopOf="@+id/button_seven"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
